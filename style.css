@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 650px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.result {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  text-align: center;
+  flex: 1;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.result h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.score-circle {
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsl(241, 72%, 46%));
+  border-radius: 50%;
+  width: 140px; 
+  height: 140px;
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-score {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.small-score {
+  opacity: 0.7;
+}
+
+.result h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.result p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Right Summary Section */
+.summary {
+  flex: 1;
+  padding: 2rem;
+}
+
+.summary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.summary ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.summary li span {
+  color: hsl(224, 30%, 27%);
+}
+
+/* Colors for each item */
+.reaction { background: hsl(0, 100%, 67%, 0.1); color: hsl(0, 100%, 67%); }
+.memory { background-color: hsl(39, 100%, 56%, 0.1); color: hsl(39, 100%, 56%); }
+.verbal { background: hsl(166, 100%, 37%, 0.1); color: hsl(166, 100%, 37%); }
+.visual { background: hsl(234, 85%, 45%, 0.1); color: hsl(234, 85%, 45%); }
+
+.continue-btn {
+  width: 100%;
+  padding: 1rem;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.continue-btn:hover {
+  background: hsl(224, 30%, 20%);
+}
